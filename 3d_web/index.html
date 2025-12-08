@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <title>3D Net Worth Visualization</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="login-overlay">
+        <div class="login-box">
+            <h2>Welcome Back</h2>
+            <p>Please sign in to access the visualization.</p>
+            <button id="loginButton" class="google-btn">
+                <img src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg" alt="Google logo">
+                <span>Sign in with Google</span>
+            </button>
+            <p id="login-status" style="margin-top:10px; font-size:12px; color:red;"></p>
+        </div>
+    </div>
+
+    <div id="container"></div>
+
+    <div id="legend">
+        <span class="legend-text">LOW</span>
+        <div class="legend-gradient"></div>
+        <span class="legend-text">HIGH</span>
+    </div>
+
+    <div id="menu">
+        <button id="table">TABLE</button>
+        <button id="sphere">SPHERE</button>
+        <button id="helix">HELIX</button>
+        <button id="grid">GRID</button>
+    </div>
+
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "https://unpkg.com/three@0.150.0/build/three.module.js",
+                "three/addons/": "https://unpkg.com/three@0.150.0/examples/jsm/"
+            }
+        }
+    </script>
+
+    <script type="module" src="main.js"></script>
+</body>
+</html>
