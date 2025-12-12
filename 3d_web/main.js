@@ -14,18 +14,18 @@ import { getAuth, signInWithPopup, GoogleAuthProvider } from "https://www.gstati
 
 // 1. LINK CSV GOOGLE SHEET
 // (File > Bagikan > Publikasikan ke Web > Pilih CSV > Copy Link)
-const GOOGLE_SHEET_CSV = "https://docs.google.com/spreadsheets/d/e/2PACX-1vRnutSGs-IzXQpDV74GqCwSrXTUuZ7zqwN0qC-SHzilu3jsSRaon5oaoJKRklyS7kS5EzLsgKhgQzmo/pub?gid=486625478&single=true&output=csv";
+const GOOGLE_SHEET_CSV = "";
 
 // 2. FIREBASE CONFIG
 // (Dapat dari Firebase Console > Project Settings > General > Your Apps)
 const firebaseConfig = {
-  apiKey: "AIzaSyBt9NjGm2e-IFUiyuiusrM8XCjniUU7JhA",
-  authDomain: "assignment-intern-5ea2d.firebaseapp.com",
-  projectId: "assignment-intern-5ea2d",
-  storageBucket: "assignment-intern-5ea2d.firebasestorage.app",
-  messagingSenderId: "844452701580",
-  appId: "1:844452701580:web:d7af3afba2d551fc2222a9",
-  measurementId: "G-L7NFJEYCP0"
+  apiKey: "",
+  authDomain: "",
+  projectId: "",
+  storageBucket: "",
+  messagingSenderId: "",
+  appId: "",
+  measurementId: ""
 };
 
 // =========================================================================
@@ -298,4 +298,5 @@ function animate() {
 
 function render() {
     renderer.render( scene, camera );
+
 }
